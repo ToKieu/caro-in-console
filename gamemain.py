@@ -1,7 +1,9 @@
 from winner import winner
+
 """
     class để tổng hợp lại và thêm một số chức năng để thành 1 trò choi
 """
+
 
 class game(winner):
 
@@ -29,6 +31,7 @@ class game(winner):
 
         # nếu yes thì tiếp tục chơi lại
         elif replay_confirmation[0] == "Y":
+            self.cachchoi()
             self.reset()
 
         # nếu No thì kết thúc chương trình
